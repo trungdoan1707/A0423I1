@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input_Output</title>
+</head>
+<body>
+<p id="p1">Tôi là thẻ p</p>
+<p id="p2">Tôi là thẻ p</p>
+<p id="p3">Tôi là thẻ p</p>
+<p id="p4">Tôi là thẻ p</p>
+<input type="text" id="result">
+<button onclick="getValue()">Get value</button>
+<script>
+    // Popup
+
+    // Hiển thị cảnh báo
+    // alert("Tôi là alert()");
+    // Hiển thị thông tin cần xác nhận
+    // confirm("Tôi là confirm! Vui lòng bấm OK để xác nhận bạn biết tui");
+    // Cho người dùng nhập dữ liệu qua popup prompt()
+    // prompt("Tôi là prompt! bạn bao nhiêu tuổi");
+
+    // Web
+    // document.write("Chào các bạn lớp A0423I1");
+    document.write("<br>");
+    document.write("Chào các bạn lớp A0423I1");
+    document.write("<br>");
+    document.write("Chào các bạn lớp A0423I1");
+    document.write("<br>");
+    document.writeln("Chào các bạn lớp A0423I1");
+    document.write("<br>");
+
+    document.writeln("Chào các bạn lớp A0423I1");
+    document.write("<br>");
+    document.writeln("Chào các bạn lớp A0423I1");
+
+    //in lại nội dung của thẻ
+    document.getElementById("p1").innerText = "<b>Ta là thẻ p1</b>";
+    document.getElementById("p2").innerHTML = "<b>Ta là thẻ p2</b>";
+
+    //màn hình console
+    console.log("Biến x đang có giá trị là: "  );
+
+    function getValue(){
+        let text = document.getElementById("result").value;
+        document.write(text);
+    }
+
+</script>
+</body>
+</html>
