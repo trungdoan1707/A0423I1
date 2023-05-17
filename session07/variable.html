@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Variable</title>
+</head>
+<body>
+
+<script>
+  var name1; //khai báo
+  name1 = "Nguyễn Văn A"; //gán giá trị
+  // var name = "Nguyễn Văn A"; Viết gộp
+  name1 = "Nguyễn Văn B";
+  alert(name1);
+  let name2 = "Nguyễn Văn A";
+  alert(name2);
+  name2 = "Nguyễn Văn C";
+  alert(name2);
+
+
+  /**
+   * var được khai báo lại còn let thì không
+   * @type {number}
+   */
+  var a = 10;
+  var a = 20;
+  //nếu đổi var thành let sẽ báo lỗi chương trình
+  alert("Giá trị của a là: "  + a);
+
+
+  /**
+   * Cơ chế hoisting khi khai báo biến bằng var cho phép đưa dòng khai báo biến lên chạy trước tiên
+   */
+  document.writeln("Giá trị của biến b là: " + b);
+  var b;
+  b  = 10;
+  document.writeln("Giá trị của biến b là: " + b);
+
+  /**
+   * block scope và function scope
+   * block scope: biến chỉ được sử dụng trong 2 dấu {} gần nó nhất
+   * function scope: được sử dụng trong function đã khai báo
+   */
+  // function checkA(){
+  //   let a = 10;
+  //   if (a == 10){
+  //     let c = 20;
+  //
+  //   }
+  //   alert(c);
+  // } Function có lỗi vì c không tồn tại, c chỉ được sử dụng trong dòng 47 -> 48
+
+  function checkB(){
+    let a = 10;
+    if (a == 10){
+      var c = 20;
+    }
+    alert("Giá trị của c là: " + c);
+  }//Hàm ko có lỗi vì khai báo c bằng var nên có thể sử dụng từ dòng 54 -> 58
+
+  checkB();
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Operator</title>
+</head>
+<body>
+
+<script>
+    /**
+     * Phân biệt a++ và ++a
+     */
+    // let a = 5;
+    // document.writeln("Giá trị của a là: " + a++);
+    // document.writeln("Giá trị của a là: " + a);
+
+    //Bài tập
+    let a = 5;
+    let b = a++;
+    // b = 5; a = 6
+    let c = b + a++;
+    // c = 11; b = 5; a = 7
+    let d = a + ++b + c; // => 7 + 6 + 11 = 24
+    document.writeln("Giá trị của d là: " + d);
+
+    /**
+     * Toán tử gán
+     */
+    // let x = 5;
+    // let y = 2;
+    // x+=y; // => x = x + y = 5 + 2 =7
+    // document.writeln("Giá trị của biến x là: " + x);
+
+    /**
+     * Toán tử so sánh
+     * phân biệt == và ===
+     */
+    let num1 = 10;
+    let str = "10";
+    document.writeln("Kết quả so sánh: " + (num1 === str));
+
+    /**
+     * Toán tử logic
+     */
+    let bl1 = true;
+    let bl2 = false;
+    document.writeln("Kết quả logic bl1 và bl2 " + (bl1 || bl2));
+</script>
+</body>
+</html>
