@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+  /**
+   * Duyệt mảng
+  * */
+  let students = ["Nguyễn Văn A", "Nguyễn Hồng B", "Lê Văn C"];
+  //Duyệt mảng bằng for
+  // for (let i = 0; i < students.length; i++){
+  //   document.writeln(students[i]);
+  //   document.writeln("<br>");
+  // }
+
+  //Duyệt mảng bằng for-in ( duyệt theo index)
+  // for (let index in students){
+  //   document.writeln(students[index]);
+  //     document.writeln("<br>");
+  // }
+
+  //Duyệt bằng for-of ( duyệt theo phần tử)
+  for(let element of students){
+    document.writeln(element);
+    document.writeln("<br>");
+  }
+</script>
+</body>
+</html>

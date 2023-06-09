@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+</head>
+<body>
+
+<script>
+    /**
+     * Khái niệm về mảng:
+     * 1. Mảng là một biến đặc biệt có thể lưu trữ được nhiều giá trị
+     * 2. Mỗi giá trong mảng được gọi là phần tử
+     * 3. Các phần tử được lưu trữ liên tiếp nhau trong bộ nhớ
+     * Các thành phần của mảng:
+     * 1. độ dài của mảng: số lượng phần tử có trong mảng
+     * 2. index: vị trí của mỗi phần tử ( bắt đầu từ 0)
+     * 3. phần tử của mảng ( element)
+     */
+
+    /**
+     * Các cách khai báo mảng
+     */
+        // cách 1: khai báo bằng cách sử dụng dấu []
+    let arr1 = [1, 2, 3, 4, 5];
+    // cách 2: Sử dụng new Array()
+    let arr2 = new Array(1, 2, 3, 4);
+    // cách 3: cách viết đơn giản hơn của cách 2, bỏ new
+    let arr3 = Array(2, 3, 5, 6);
+
+    /** Lưu ý khi khai báo mảng bằng Array(),
+     *  nếu chỉ có 1 giá trị số n được truyền vào thì đó là khai báo mảng có n phần tử
+     * chứ không phải là mảng có phần tử là n
+     */
+
+        // let arr4 = Array(5);
+        // alert(arr1.length);
+        // alert(arr2.length);
+        // alert(arr3.length);
+        // alert(arr4[1]);
+
+        //sort(): sắp xếp phần tử
+    let arrSort = [4, 1, 6, 9, 5, 11];
+    alert(arrSort.sort(function (a, b) {
+        return b - a;
+    }).join("-"));
+
+</script>
+</body>
+</html>

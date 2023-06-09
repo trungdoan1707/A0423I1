@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    /**
+     * Duyệt mảng đa chiều
+     * */
+    let students = [
+        ["Nguyễn Văn A", 25, "0933223412", "Đà Nẵng"],
+        ["Phan Văn B", 21, "093234145", "Huế"],
+        ["Trần Văn C", 27, "0937656411", "Quảng Nam"]
+    ];
+
+    for (let student of students){
+        for (let infor of student){
+            document.writeln(infor);
+            document.writeln("<br>");
+        }
+        document.writeln("<br>");
+        document.writeln("----------------------------");
+        document.writeln("<br>");
+    }
+
+    let str = "Hello CodeGym 123 Đà Nẵng";
+    alert(str[4]);
+
+    const arr6 = [3,4,5,6,7];
+    arr6[1] = 10;
+    alert(arr6.join("----"));
+</script>
+</body>
+</html>

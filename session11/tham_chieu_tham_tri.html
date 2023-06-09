@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+  let a = 10;
+  let b = 5;
+  function change(x,y){
+    let z = x;
+    x = y;
+    y = z;
+  }
+
+  change(a,b);
+  alert("Giá trị của a là: " + a);
+  alert("Giá trị của b là: " + b);
+
+  /**
+   * tham chiếu
+   * @type {number[]}
+   */
+  let array = [10,5];
+  function change(arr){
+    let z = arr[0];
+    arr[0] = arr[1];
+    arr[1] = z;
+  }
+
+  change(array);
+  alert("Giá trị của array là: " + array.join("--"));
+</script>
+</body>
+</html>
