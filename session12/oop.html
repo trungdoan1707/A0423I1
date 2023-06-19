@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OOP</title>
+</head>
+<body>
+
+
+<script>
+    class Student {
+        constructor(name, age, phone, address) {
+            this.name = name;
+            this.age = age;
+            this._phone = phone;
+            this.address = address;
+        }
+        test(){
+            document.writeln("Bạn sinh viên tên là: " + this.name + " đến trung tâm để thi")
+        }
+        getPhone(){
+           return this._phone
+        }
+    }
+
+
+    let student1 = new Student("Nguyễn Văn A", 25, "09454736443", "Đà Nẵng");
+    let student2 = new Student("Nguyễn Văn B", 26, "09454736474", "Quảng Trị");
+    let student3 = new Student("Nguyễn Văn C", 27, "09454736475", "Huế");
+    let students = [student1, student2, student3];
+    for (let student of students){
+        document.writeln("Tên của sinh viên" + student.name);
+        document.writeln("<br>");
+        document.writeln("Tuổi của sinh viên" + student.age);
+        document.writeln("<br>");
+        document.writeln("Số điện thoại của sinh viên" + student.getPhone());
+        document.writeln("<br>");
+        document.writeln("Địa chỉ của sinh viên" + student.address);
+        document.writeln("<br>");
+        if (student.age === 26){
+            student.test();
+        }
+        document.writeln("<br>");
+        document.writeln("----------------------------");
+        document.writeln("<br>");
+    }
+
+
+</script>
+</body>
+</html>
